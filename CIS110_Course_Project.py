@@ -6,26 +6,26 @@ input(f"\nPress the enter key to continue...")
 keepPlaying = "yes"
 while keepPlaying.lower() == "yes":
     #5 Questions before the story begins
-    species = input("\nWhat species is your character:  ")
+    species = input(f"\nWhat species is your character:  ")
     while (len(species) == 0):
         species = input(f"Please enter a species:  ")
         
-    characterName = input("What is your characters name?  ")
+    characterName = input(f"What is your characters name?  ")
     while (len(characterName) == 0):
         characterName = input(f"Please enter a character name:  ")
         
-    planetName = input("Which planet do you wish you could explore?  ")
+    planetName = input(f"Which planet do you wish you could explore?  ")
     while (len(planetName) == 0):
         planetName = input(f"Please enter a planet name:  ")
         
-    movie = input("What is your favorite movie?  ")
+    movie = input(f"What is your favorite movie?  ")
     while (len(movie) == 0):
         movie = input(f"Please enter your favorite movie name:  ")
         
-    food = input("What is your favorite food?  ")
+    food = input(f"What is your favorite food?  ")
     while (len(food) == 0):
         food = input(f"Please enter your favorite food:  ")
-
+#Story Starts
 print(f"\nMay the Force be with you!")
 print(f"\nThere once was a strong {species} named {characterName}. ")
 print(f"\n{characterName} Could not wait to explore {planetName}.  ")
