@@ -75,5 +75,9 @@ else:
     print(f"\n{characterName} has a new love for {planetName} and decides to make a home there.  ")
     print(f"\n{characterName} now making a home decided to open a movie theater showing on {movie} movies and serves {food} food.  ")
 print("\nThe End")
+
+keepPlaying = input(f"\nDo you want to play again? Enter yes or no:  ")
+while keepPlaying.lower() != "yes" and keepPlaying.lower() != "no":
+    keepPlaying = input(f"Please type yes or no:  ")
     
-          
+         
