@@ -3,11 +3,28 @@ print(f"Part of the fun is you get to change the character to your liking.")
 print(f"After each answer you will have to hit the enter key to move on.")
 input(f"\nPress the enter key to continue...")
 
-species = input("\nWhat species is your character:  ")
-characterName = input("What is your characters name?  ")
-planetName = input("Which planet do you wish you could explore?  ")
-movie = input("What is your favorite movie?  ")
-food = input("What is your favorite food?  ")
+keepPlaying = "yes"
+while keepPlaying.lower() == "yes":
+    #5 Questions before the story begins
+    species = input("\nWhat species is your character:  ")
+    while (len(species) == 0):
+        species = input(f"Please enter a species:  ")
+        
+    characterName = input("What is your characters name?  ")
+    while (len(characterName) == 0):
+        characterName = input(f"Please enter a character name:  ")
+        
+    planetName = input("Which planet do you wish you could explore?  ")
+    while (len(planetName) == 0):
+        planetName = input(f"Please enter a planet name:  ")
+        
+    movie = input("What is your favorite movie?  ")
+    while (len(movie) == 0):
+        movie = input(f"Please enter your favorite movie name:  ")
+        
+    food = input("What is your favorite food?  ")
+    while (len(food) == 0):
+        food = input(f"Please enter your favorite food:  ")
 
 print(f"\nMay the Force be with you!")
 print(f"\nThere once was a strong {species} named {characterName}. ")
@@ -50,7 +67,7 @@ else:
 #Alternate Endings
 if defendYourself == "yes" and strikeDown == "yes":
     print(f"\nAfter letting his emotions take control in all his decisions {characterName} takes the enemies weapon and continues down the same dark path of hunting what once were his brothers.  ")
-    print(f"\nNo longer feeling {species} {characterName} take the bloddy mask off of his fallen enemy and wears it to cover his identity.  ")
+    print(f"\nNo longer feeling {species} {characterName} take the bloody mask off of his fallen enemy and wears it to cover his identity.  ")
 elif defendYourself == "no" and strikeDown== "no":
     print(f"\n After fully controlling your emotions {characterName} feels connected to {planetName} and is at peace.  ")
     print(f"\Feeling connected as a {species} {characterName} heads back home to be welcomed to become a master and be on the high council.  ")
